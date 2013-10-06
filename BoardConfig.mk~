@@ -35,7 +35,7 @@ TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/rk30board/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/rk29board/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/rockchip/rk30board/bluetooth/vnd_rockchip.txt
 
 # WLAN
