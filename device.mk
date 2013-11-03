@@ -16,6 +16,10 @@
 DEVICE_PACKAGE_OVERLAYS := device/rockchip/rk30board/overlay
 PRODUCT_CHARACTERISTICS := tablet
 
+# Copy prebuilt apps
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,device/rockchip/rk30board/prebuilt/app,system/app)
+
 # Copy prebuilt bins
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,device/rockchip/rk30board/prebuilt/bin,system/bin)
@@ -23,6 +27,10 @@ PRODUCT_COPY_FILES += \
 # Copy prebuilt etcs
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,device/rockchip/rk30board/prebuilt/etc,system/etc)
+
+# Copy prebuilt init.d scripts
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,device/rockchip/rk30board/prebuilt/etc/init.d,system/etc/init.d)
 
 # Copy prebuilt hw libs
 PRODUCT_COPY_FILES += \
