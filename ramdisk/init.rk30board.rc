@@ -67,6 +67,7 @@ on boot
 
 #backlight
     chown system system /sys/class/backlight/rk28_bl/brightness
+    chown system system /sys/class/backlight/rk30_bl/brightness
 
 # permissions for bluetooth.
     mkdir /data/misc/bluetoothd 0775 bluetooth bluetooth
