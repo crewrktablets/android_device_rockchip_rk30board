@@ -72,6 +72,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,device/rockchip/rk30board/ramdisk,root)
 
+# Copy ramdisk sbin files
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,device/rockchip/rk30board/ramdisk/sbin,root/sbin)
+
 # copy Rktools
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,device/rockchip/rk30board/rktools,rktools)
