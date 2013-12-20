@@ -19,6 +19,7 @@ on early-init
     setcon u:r:init:s0
 
     start ueventd
+    start fb
 
 # create mountpoints
     mkdir /mnt 0775 root system
@@ -544,7 +545,7 @@ service flash_recovery /system/etc/install-recovery.sh
     class main
     oneshot
 
-service sysinit /sbin/busybox_t fbset -fb /dev/graphics/fb0 -cld 1
+service fb /sbin/busybox_t fbset -fb /dev/graphics/fb0 -cld 1
     class main                       
     oneshot
 
